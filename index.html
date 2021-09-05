@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script> -->
+    <title>Momentum App</title>
+</head>
+
+<body>    
+    <div id="right_center">
+        <span id="clock">00:00:00</span>
+        <span id="weather"></span>       
+    </div>        
+    <form class="hidden" id="login-form">
+        <input
+            required
+            maxlength="15"             
+            type="text"
+            placeholder="What is your name?"
+        />
+        <input type="submit" value="Log In" />
+    </form>    
+    <h1 id="greeting" class="hidden"></h1>
+    <div id="quote">
+        <span></span>
+        <span></span>
+    </div>    
+    <div id="todo">
+        <span id="todo-title">To Do List</span>
+        <form id="todo-form">
+            <input type="text" placeholder="Write a To Do and Press Enter" required/>
+        </form>
+        <ul id="todo-list"></ul>
+    </div>    
+    <script src="js/login.js"></script>  
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>  
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script> 
+    <script src="js/weather.js"></script>
+</body>
+
+</html>
